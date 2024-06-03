@@ -1,0 +1,465 @@
+/*  - Fonts
+    - General
+    - Fonts
+    - Social Icon Hover
+    - Header And Navigation
+    - Slider
+    - About
+    - Price
+    - Parallax
+    - Contact
+    - Footer
+    - Media Queries   */
+/* !genaral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  position: fixed;
+  width: 100% ;
+  top: 0;
+  left: 0;
+background: #CC1ACC;
+opacity: 0.8;
+z-index: 10;
+}
+.navbar-brand img {
+	width: 158px;
+	height: 38px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: end;
+    align-content: end;
+}
+.nav-menu ul li a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-right: var(--bs-navbar-nav-link-padding-x);
+	padding-left: 34px;
+}
+[type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  color: #000;
+  z-index: 1;
+}
+#banner{
+    background: url(../images/Shape.jpg) no-repeat center/ cover;
+}
+.banner-main{
+    display: flex;
+}
+.banner-text{
+    padding-left: 145px;
+    color: #fff;
+}
+@media (max-width: 990px) {
+ .container{
+  padding: 0 10px;
+ }
+ .banner-main{
+  margin: 0 10px;
+ }
+ #dream{
+  margin: 0 10px;
+ }
+  .nav-menu{
+    display: flex;
+    justify-content: start;
+    align-content: start;
+}
+    .banner-text{
+    padding-left: 0;
+    }
+    .dream-text{
+        padding-left: 0 !important;
+      }
+      .buttonn{
+        display: block;
+      }
+      .agency-text{
+        padding-left: 0 !important;
+    }
+    .testimonial-main {
+      padding-left: 0 !important;
+    }
+    .contact-form{
+      padding-left: 0 !important;
+    }
+}
+.banner-text h1{
+    font-size: 24px;
+    margin-top: 200px;
+}
+.banner-text h2{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.banner-img {
+	margin-top: 122px;
+	margin-right: 95px;
+}
+.btnn{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+   background-color: #f5256a;
+   border: 2px;
+   border-color: #f5256a;
+text-decoration: none;
+letter-spacing: 1.17px;
+text-transform: uppercase;
+padding: .5rem 1.25rem;
+font-size: .75rem;
+line-height: 1.5;
+border-radius: 1.25rem;
+white-space: normal;
+  }
+  .btnn-two{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+   background-color: #68328e;
+   border: 2px;
+   border-color: #68328e;
+text-decoration: none;
+letter-spacing: 1.17px;
+text-transform: uppercase;
+padding: .5rem 1.25rem;
+font-size: .75rem;
+line-height: 1.5;
+border-radius: 1.25rem;
+white-space: normal;
+  }
+  #dream{
+    background: url(../images/World\ Map.png) no-repeat center /cover;
+    color: #000;
+  }
+  .dream-main{
+    padding-top: 105px;
+  }
+  .dream-text{
+    padding-left: 210px;
+  }
+  .dream-text span{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .dream-text h1{
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  @media (max-width: 390px){
+    .btn-group{
+      display: block;
+    }
+  }
+  @media (max-width: 765px){
+    .dream-img{
+      margin-top: 30px;
+      text-align: left !important;
+    }
+    #creative-agency img{
+      margin-top: 30px;
+    }
+    #client-logo img{
+      margin-top: 30px;
+    }
+    .prev, .next {
+      top: 400px !important;
+    }
+  }
+  .btn-group a{
+    color: #000;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: .5rem 1.25rem;
+    overflow: hidden;
+  }
+  .btn-group a:hover{
+   background-color: #f5256a;
+   padding: 10px;
+   padding: .5rem 1.25rem;
+border-radius: 1.25rem;
+  }
+  .dream-text p{
+    font-size: 12px;
+    padding-bottom: 50px;
+  }
+  .btnn-three{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+   background-color: #f5256a;
+   border: 2px;
+   border-color: #f5256a;
+text-decoration: none;
+letter-spacing: 1.17px;
+text-transform: uppercase;
+padding: .5rem 1.25rem;
+font-size: .75rem;
+line-height: 1.5;
+border-radius: 8px;
+white-space: normal
+  }
+  #about{
+    padding-top: 100px;
+  }
+  .card {
+	background-color: #4b2d7f;
+    color: #fff;
+}
+  .card:hover{
+	background-color: #40286a;
+    color: #fff;
+}
+.card h5{
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+.card img{
+    width: 65px;
+    height: 72px;
+}
+.cars-body p{
+    font-size: 25px;
+}
+ .text-body-secondary{
+    color: #9b93ad !important;
+    font-size: 12px;
+}
+#grow{
+    background: url(../images/Layer-23.png) no-repeat center /cover;
+    padding-bottom: 50px;
+}
+.grow-main h1{
+    font-size: 33px;
+    padding-top: 90px;
+}
+.grow-main h2{
+    font-size: 30px;
+    padding-top: 35px;
+}
+.grow-main p{
+    font-size: 14px;
+    padding-top: 25px;
+   padding-bottom: 20px;
+}
+#creative-agency{
+    padding-top: 50px;
+    color: #000;
+}
+.agency-text{
+    padding-left: 100px;
+}
+.agency-text span{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .agency-text h1{
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .agency-text ,.agency-icon-text p{
+    font-size: 12px;
+    padding-bottom: 50px;
+  }
+  .video-img{
+    position: relative;
+  }
+  .video-img i {
+	position: absolute;
+	top: 44%;
+	left: 46%;
+	width: 40px;
+	height: 40px;
+	background: #f42267;
+	border-radius: 50%;
+	line-height: 40px;
+	color: #fff;
+	padding-left: 5px;
+}
+#work{
+    margin-top: 80px;
+    background: #f1f1ee;
+    color: #000;
+}
+.work-header h1{
+    font-size: 30px;
+    padding-top: 40px;
+}
+.work-header p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+#client-logo{
+  background: #4b2d7f;
+  margin-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+#testimonial{
+background: url(../images/test-bg.png);
+padding-top: 50px;
+position: relative;
+}
+.next{
+  position: absolute;
+  top: 215px;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #68328e;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.prev{
+  position: absolute;
+  top: 215px;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #68328e;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.testimonial-main {
+  padding-left: 400px;
+}
+.testimonial-main h1{
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.testimonial-main h2{
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.testimonial-main span{
+  color: #f42267;
+  font-size: 55px;
+  font-weight: 600;
+}
+.testimonial-main p {
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-top: -55px;
+	margin-left: 20px;
+}
+.star{
+  padding-top: 110px;
+  margin-left: 20px;
+  color: #f42267;
+}
+.testimonial-main h6{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#contact{
+  background: url(../images/contact-bg.png);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  }
+  .contact-form{
+ padding-left: 400px;
+  }
+  .form-control {
+    background-color: #f66f9b;
+  }
+  .btn-primary {
+    --bs-btn-bg: #4b2d7f;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-bg: #4b2d7f;
+    --bs-btn-hover-border-color: #4b2d7f;
+    --bs-btn-active-bg: #4b2d7f;
+    --bs-btn-active-border-color: #4b2d7f;
+  }
+  #brand-name{
+    background: #40286a;
+    padding: 85px 0;
+  }
+  /* .single{
+    display:none;
+  } */
+  .brand-name-text h5{
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+  }
+  .brand-name-text h5::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 25px;
+    background: #6c41b7;
+  }
+  @media (max-width: 890px){
+    .brand-name-text h5::after{
+     top: 0;
+     left: 105px;
+    }
+  }
+  footer{
+    background: url(../images/map.png);
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 140px;
+  }
+  .footer-text h5{
+font-size: 20px;
+color: #40286a;
+padding-bottom: 20px;
+  }
+  .footer-text p{
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .last{
+    background: #f6f6f6;
+    color: #000;
+    padding: 50px 0;
+  }
